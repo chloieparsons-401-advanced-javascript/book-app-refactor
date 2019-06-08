@@ -1,2 +1,43 @@
-# book-app-refactor
-Refactoring Book App v2 with Mongo and PG
+#LAB - Book App Refactor
+
+##Author: Chloie Parsons
+
+## Links and Resources
+* submission PR
+* Travis
+* Back-end: Mongo
+* Back-end: PSQL
+
+## Documentation
+* jsdoc
+* swagger
+
+# Modules
+modulename.js
+
+Exported Values and Methods
+foo(thing) -> string
+Usage Notes or examples
+
+bar(array) -> array
+Usage Notes or examples
+
+## Setup
+.env requirements
+PORT - Port Number
+MONGODB_URI - URL to the running mongo instance/db
+
+## Running the app
+npm start
+Endpoint: /foo/bar/
+Returns a JSON object with abc in it.
+Endpoint: /bing/zing/
+Returns a JSON object with xyz in it.
+
+## Tests
+How do you run tests?
+What assertions were made?
+What assertions need to be / should be made?
+
+# UML
+* assets/bookApp-UML.JPG
