@@ -29,10 +29,10 @@ router.use(express.static('public'));
  * Method Override
  * @param {object} req
  */
-router.use(methodOverride ((req, res) => {
-  if (req.body && typeof req.body === 'object' && '_method' in req.body){
-    let method = req.body._method;
-    delete req.body._method;
+router.use(methodOverride ((request, response) => {
+  if (request.body && typeof request.body === 'object' && '_method' in request.body){
+    let method = request.body._method;
+    delete request.body._method;
     return method;
   }
 }));
