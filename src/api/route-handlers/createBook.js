@@ -12,7 +12,7 @@ let db = process.env.DATABASE;
 const errorHandler = require('./../../middleware/500');
 
 /**
- * Gets all books from the database
+ * Create a book in the database
  * @param {object} req
  * @param {object} res
  * @param {object} next

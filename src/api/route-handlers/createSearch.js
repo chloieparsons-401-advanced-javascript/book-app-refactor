@@ -10,13 +10,12 @@ const superagent = require('superagent');
 const Book = require('../../models/book-class.js');
 
 /**
- * Gets all books from the database
- * @param {object} req
- * @param {object} res
- * @param {object} next
+ * Search the database
+ * @param {object} request
+ * @param {object} response
  */
 
- module.exports = (request, response, next) => {
+ module.exports = (request, response) => {
 
   let url = 'https://wwww.googleapis.com/books/v1/volumes?q=';
 

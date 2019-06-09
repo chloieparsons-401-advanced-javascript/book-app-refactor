@@ -12,10 +12,11 @@ let db = process.env.DATABASE;
 const errorHandler = require('./../../middleware/500');
 
 /**
- * Gets all books from the database
+ * Gets a book from the database
  * @param {object} request
  * @param {object} response
- * @param {object} next
+ * @param {object} request.model.get
+ * @param {object} response.render
  */
 
 module.exports = (request, response) => {

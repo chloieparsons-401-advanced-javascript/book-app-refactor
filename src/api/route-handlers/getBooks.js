@@ -12,12 +12,13 @@ const errorHandler = require('./../../middleware/500');
 
 /**
  * Gets all books from the database
- * @param {object} req
- * @param {object} res
- * @param {object} next
+ * @param {object} request
+ * @param {object} response
+ * @param {object} request.model.get
+ * @param {object} response.render 
  */
 
- module.exports = (request, response, next) => {
+ module.exports = (request, response) => {
    request.model.get()
     .then(results => {
       if(db === 'pg') {
