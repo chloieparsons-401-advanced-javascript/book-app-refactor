@@ -4,6 +4,12 @@
  * Get Books Route Handler
  */
 
+require('dotenv').config();
+
+let db = process.env.DATABASE;
+
+const errorHandler = require('./../../middleware/500');
+
 /**
  * Gets all books from the database
  * @param {object} req
@@ -14,15 +20,24 @@
  module.exports = (request, response, next) => {
    request.model.get()
     .then(results => {
-      if (results.rows.rowCount === 0) {
-        response.render('pages/searches/new')
+      if(db === 'pg') {
 
-      } else {
-        response.render('pages/index', { books: results.rows })
+        if (results.rows.rowCount === 0) {
+          response.render('pages/searches/new');
+
+        } else {
+          response.render('pages/index', { books: results.rows });
+        }
+      }
+      else {
+        if(results.length === 0) {
+          response.render('pages/searches/new');
+
+        } else {
+          response.render('pages/index', { books: results });
+        }
       }
     })
 
-    .catch(error => {
-      response.render('pages/error', { error: error })
-    });
+    .catch(errorHandler);
  }
