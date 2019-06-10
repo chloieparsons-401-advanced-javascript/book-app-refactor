@@ -3,8 +3,8 @@
 ##Author: Chloie Parsons
 
 ## Links and Resources
-* submission PR
-* Travis
+* submission PR: https://github.com/chloieparsons-401-advanced-javascript/book-app-refactor/pull/3
+* Travis: https://www.travis-ci.com/chloieparsons-401-advanced-javascript/book-app-refactor
 * Back-end: Mongo
 * Back-end: PSQL
 
@@ -13,7 +13,7 @@
 * swagger
 
 # Modules
-modulename.js
+book-model.js
 
 Exported Values and Methods
 foo(thing) -> string
@@ -26,6 +26,7 @@ Usage Notes or examples
 .env requirements
 PORT - Port Number
 MONGODB_URI - URL to the running mongo instance/db
+POSTGRES_URL - URL to the running postgres instance/db
 
 ## Running the app
 npm start
@@ -35,9 +36,7 @@ Endpoint: /bing/zing/
 Returns a JSON object with xyz in it.
 
 ## Tests
-How do you run tests?
-What assertions were made?
-What assertions need to be / should be made?
+To Be Completed
 
 # UML
 * assets/bookApp-UML.JPG
