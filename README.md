@@ -3,8 +3,8 @@
 ##Author: Chloie Parsons
 
 ## Links and Resources
-* submission PR
-* Travis
+* Submission PR:
+* Travis:
 * Back-end: Mongo
 * Back-end: PSQL
 
