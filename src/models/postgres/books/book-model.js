@@ -1,9 +1,9 @@
 'use strict';
 
 const client = require('../../../../index');
-const pgModel = require('../postgres-model');
+const postgresModel = require('../postgres-model');
 
-class Books extends pgModel {
+class Books extends postgresModel {
   
   createShelf(shelf) {
     let normalizedShelf = shelf.bookshelf.toUpperCase();
