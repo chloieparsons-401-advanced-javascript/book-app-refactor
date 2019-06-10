@@ -9,9 +9,9 @@ require('dotenv').config();
  * @param {} next
  */
 
- module.exports = (req, res, next) => {
-   let db = process.env.DATABASE;
-   req.model = require(`../models/${db}models/books/book-model.js`);
+module.exports = (req, res, next) => {
+  let db = process.env.DATABASE;
+  req.model = require(`../models/${db}models/books/book-model.js`);
 
-   next();
- };
+  next();
+};

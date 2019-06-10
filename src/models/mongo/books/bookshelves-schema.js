@@ -6,8 +6,8 @@ require('mongoose-schema-jsonschema')(mongoose);
 const bookshelves = mongoose.Schema({
   name: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 });
 
 module.exports = mongoose.model('bookshelves', bookshelves);

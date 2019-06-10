@@ -12,4 +12,4 @@
 
 module.exports = (response) => {
   response.render('pages/searches/new');
-}
+};

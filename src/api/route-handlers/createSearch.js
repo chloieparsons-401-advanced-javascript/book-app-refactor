@@ -15,7 +15,7 @@ const Book = require('../../models/book-class.js');
  * @param {object} response
  */
 
- module.exports = (request, response) => {
+module.exports = (request, response) => {
 
   let url = 'https://wwww.googleapis.com/books/v1/volumes?q=';
 
@@ -30,4 +30,4 @@ const Book = require('../../models/book-class.js');
       response.render('pages/searches/show', { results: results }))
 
     .catch(errorHandler);
-}
+};

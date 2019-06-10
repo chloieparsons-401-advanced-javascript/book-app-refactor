@@ -19,4 +19,4 @@ module.exports = (request, response) => {
   request.model.delete(_id)
     .then(response.redirect('/'))
     .catch(errorHandler);
-}
+};

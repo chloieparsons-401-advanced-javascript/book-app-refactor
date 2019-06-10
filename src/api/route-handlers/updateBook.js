@@ -30,4 +30,4 @@ module.exports = (request, response) => {
       .then(response.redirect(`/books/${request.params.id}`))
       .catch(errorHandler);
   }
-}
+};

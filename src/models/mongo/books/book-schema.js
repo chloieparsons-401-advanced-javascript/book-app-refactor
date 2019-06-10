@@ -1,37 +1,37 @@
 'use strict';
 
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 require('mongoose-schema-jsonschema')(mongoose);
 
 const books = mongoose.Schema({
   title: {
     type: String,
-    required: true
+    required: true,
   },
 
   author: {
     type: String,
-    required: true
+    required: true,
   },
 
   isbn: {
     type: String,
-    required: true
+    required: true,
   },
 
   image_url: {
     type: String,
-    required: true
+    required: true,
   },
 
   description: {
     type: String,
-    required: true
+    required: true,
   },
 
   bookshelf_id: {
     type: String,
-    required: true
+    required: true,
   },
 });
 

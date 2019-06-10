@@ -18,13 +18,13 @@ const errorHandler = require('./../../middleware/500');
  * @param {object} next
  */
 
- module.exports = (request, response) => {
+module.exports = (request, response) => {
   if(db === 'pg') {
     request.model.createShelf(request.body)
       .then(result => {
 
         request.model.post(request.body, result)
-          .then(res => response.redirect(`/books/${res.rows[0].id}`))
+          .then(res => response.redirect(`/books/${res.rows[0].id}`));
       })
       .catch(errorHandler);
   }
@@ -34,4 +34,4 @@ const errorHandler = require('./../../middleware/500');
       .then(response.redirect('/'))
       .catch(errorHandler);
   }
- }
+};

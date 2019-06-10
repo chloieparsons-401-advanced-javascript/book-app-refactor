@@ -8,10 +8,10 @@
 
 class MongoModel {
 
- /**
-  * Model constructor takes in schema
-  * @param {} schema 
-  */
+  /**
+   * Model constructor takes in schema
+   * @param {} schema 
+   */
 
   constructor(schema) {
     this.schema = schema;

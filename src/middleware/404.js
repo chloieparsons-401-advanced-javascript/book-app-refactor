@@ -11,7 +11,7 @@
  * @param {} next - goes to next piece of middleware
  */
 
- module.exports = (req, res, next) => {
-   let error = { error: 'Resource Not Found'};
-   res.status(404).json(error).end();
- };
+module.exports = (req, res, next) => {
+  let error = { error: 'Resource Not Found'};
+  res.status(404).json(error).end();
+};

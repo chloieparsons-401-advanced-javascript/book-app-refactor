@@ -18,8 +18,8 @@ const errorHandler = require('./../../middleware/500');
  * @param {object} response.render 
  */
 
- module.exports = (request, response) => {
-   request.model.get()
+module.exports = (request, response) => {
+  request.model.get()
     .then(results => {
       if(db === 'pg') {
 
@@ -41,4 +41,4 @@ const errorHandler = require('./../../middleware/500');
     })
 
     .catch(errorHandler);
- }
+};

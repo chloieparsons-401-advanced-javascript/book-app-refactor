@@ -21,7 +21,7 @@ class Books extends postgresModel {
 
           return this.client.query(INSERT, insertVal);
         }
-      })
+      });
   }
 }
 
